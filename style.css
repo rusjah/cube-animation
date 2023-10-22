@@ -7,6 +7,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: aliceblue;
 }
 
 .container {
@@ -16,7 +17,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    gap: 30vh;
 }
 
 .cube {
@@ -74,4 +75,62 @@ body {
     100% {
         transform: rotate3d(1,1,0, 360deg);
     }
+}
+
+.carusel {
+    width: 200px;
+    height: 100px;
+    transform-style: preserve-3d;
+    position: relative;
+    perspective: 1000px;
+}
+
+.cart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.one {
+    background-color: rgb(78, 165, 241);
+    border: 5px solid rgb(22, 94, 203);
+    transform: rotateY(0) translateZ(250px);   
+}
+.two {
+    background-color: rgb(176, 144, 241);
+    border: 5px solid rgb(191, 22, 203);
+    transform: rotateY(51deg) translateZ(250px);  
+}
+.three {
+    background-color: rgb(241, 144, 149);
+    border: 5px solid rgb(203, 22, 22);
+    transform: rotateY(102deg) translateZ(250px); 
+}
+.four {
+    background-color: rgb(118, 222, 191);
+    border: 5px solid rgb(20, 105, 79);
+    transform: rotateY(153deg) translateZ(250px); 
+}
+.five {
+    background-color: rgb(189, 241, 78);
+    border: 5px solid rgb(69, 94, 15);
+    transform: rotateY(204deg) translateZ(250px); 
+}
+.six {
+    background-color: rgb(241, 241, 78);
+    border: 5px solid rgb(92, 92, 13);
+    transform: rotateY(255deg) translateZ(250px);
+}
+.seven {
+    background-color: rgb(236, 150, 116);
+    border: 5px solid rgb(96, 34, 10);
+    transform: rotateY(306deg) translateZ(250px);
+
 }
