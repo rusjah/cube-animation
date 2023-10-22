@@ -24,7 +24,8 @@ body {
     height: 200px;
     transform-style: preserve-3d;
     position: relative;
-    transform: rotate3d(1, 1, 0, 45deg);
+    transform: rotate3d(1, 1, 0, 30deg);
+    animation: cubeRotate 5s linear infinite;
 }
 
 .squear {
@@ -64,4 +65,13 @@ body {
 
 .right {
     transform: translateX(100px) rotateY(90deg);
+}
+
+@keyframes cubeRotate {
+    0% {
+        transform: rotate3d(0,0,0,0);
+    }
+    100% {
+        transform: rotate3d(1,1,0, 360deg);
+    }
 }
